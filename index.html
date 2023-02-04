@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vendor/css/style.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="./images/moon_avatar.png" type="image/svg">
+    <title>MOON - Разработка мобильных приложений</title>
+</head>
+<body class="body">
+
+    <div class="wrapper">
+
+        
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header-left">
+                        <a href="" class="header-left-title">MOON.</a>
+                    </div>
+
+                    <nav class="header-top">
+                        <a href="#services" class="header-top-link">Услуги</a>
+                        <a href="#etaps" class="header-top-link">Разработка</a>
+                        <a href="#contacts" class="header-top-link">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="intro">
+            <div class="container">
+                <div class="intro__inner">
+
+                    <div class="intro-top">
+                        <div class="intro-top-left">
+                            <h1 class="intro-top-left-title">Разработка мобильных <br> приложений и веб-сервисов</h1>
+                            <p class="intro-top-left-desc">Наш проект занимается разработкой мобильных <br> приложений с различным уровнем сложности. <br> На каждый проект мы даем пожизненную гарантию.</p>
+                            <button class="intro-top-left-button" onclick="open_popup()" id="contact_us">Связаться с нами</button>
+
+                            <div class="popup-block" id = "popup">
+                                <div class="popup-bg"></div>
+                                <div class="popup">
+                                    <div class="popup-content">
+                                        <form id="form" method="POST">
+                                            <p class="popup-title">Написать нам</p>
+                                            
+                                            <div class="popup-input">
+                                                <input type="text" id="username" placeholder="Ваше имя *" class="popup-name popup-input-all">
+                                                <input type="text" id="email" placeholder="Ваша почта *" class="popup-email popup-input-all">
+                                                <!-- <input type="text" id="message" placeholder="Ваше сообщение *" class="popup-message popup-input-all"> -->
+                                                <textarea id="message" class="popup-message popup-input-all" placeholder="Ваше сообщение *"></textarea>
+                                            </div>
+
+                                            <button id="button" class="popup-button">Отправить</button>
+                                        </form>
+                                        <button class="popup-close" onclick="close_popup()"><img src="./images/close.svg" alt=""></button>
+                                    </div>
+                                </div>
+
+                                <div class="window" onclick="window_close()"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="intro-top-right">
+                            <img src="./images/intro-bg.png" width="544" height="544" alt="">
+                        </div>
+                    </div>
+
+                    <div class="intro-bottom">
+                        <div class="intro-bottom-left">
+                            <div class="intro-bottom-left-img">
+                                <p class="intro-bottom-left-title">₽ 30 млн</p>
+                                <p class="intro-bottom-left-desc">заработано за все время</p>
+                            </div>
+                        </div>
+
+                        <div class="intro-bottom-top">
+                            <div class="intro-bottom-top-img">
+                                <p class="intro-bottom-top-title">100 +</p>
+                                <p class="intro-bottom-top-desc">успешных проектов</p>
+                            </div>
+                        </div>
+
+                        <div class="intro-bottom-right">
+                            <div class="intro-bottom-right-img">
+                                <p class="intro-bottom-right-title">5 лет</p>
+                                <p class="intro-bottom-right-desc">опыт на рынке</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <img src="./images/volna.svg" class="volna-services" alt="">
+
+        <section class="services">
+            <div class="container">
+                <div class="services__inner" id="services">
+                    <p class="services-title-main">Наши услуги</p>
+
+                    <div class="services-blocks">
+                        <div class="services-one services-block">
+                            <p class="services-title">Типовой</p>
+                            <p class="services-price">₽ 1 000 000</p>
+                            <div class="services-list">
+                                <p class="services-list-one services-list-all">Каталог товаров и услуг</p>
+                                <p class="services-list-two services-list-all">Сделать заказ</p>
+                                <p class="services-list-three services-list-all">Новости и акции</p>
+                                <p class="services-list-four services-list-all">Обратная связь</p>
+                                <p class="services-list-five services-list-all">Контакты</p>
+                            </div>
+                            <button class="services-button" onclick="open_popup()">Заказать</button> 
+                        </div>
+
+                        <div class="services-two services-block">
+                            <p class="services-title">Бизнес</p>
+                            <p class="services-price">₽ 2 000 000</p>
+                            <div class="services-list">
+                                <p class="services-list-one services-list-all">Программа лояльности</p>
+                                <p class="services-list-two services-list-all">Push уведомления</p>
+                                <p class="services-list-three services-list-all">Серверная часть</p>
+                                <p class="services-list-four services-list-all">Панель управления</p>
+                                <p class="services-list-five services-list-all">Чаты</p>
+                            </div>
+                            <button class="services-button" onclick="open_popup()">Заказать</button> 
+                        </div>
+
+                        <div class="services-three services-block">
+                            <p class="services-title">Кастом</p>
+                            <p class="services-price">₽ 3 000 000</p>
+                            <div class="services-list">
+                                <p class="services-list-one services-list-all">Автоматизация процессов</p>
+                                <p class="services-list-two services-list-all">Сложные интеграции</p>
+                                <p class="services-list-three services-list-all">Маркетплейсы</p>
+                                <p class="services-list-four services-list-all">Корпоративные решения</p>
+                                <p class="services-list-five services-list-all">Smart TV, IoT, VR \ AR</p>
+                            </div>
+                            <button class="services-button" onclick="open_popup()">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="etaps">
+            <div class="container">
+                <div class="etaps__inner" id="etaps">
+                    <p class="etaps-title-main">Этапы разработки приложений</p>
+
+                    <div class="etaps-block">
+                        <div class="etaps-block-one">
+                            <div class="etaps-block-one-one">
+                                <img src="./images/etaps_one.svg" width="64" height="64" alt="">
+                                <p class="etaps-block-one-one-title etaps-title">Анализируем</p>
+                                <p class="etaps-block-one-one-desc etaps-desc">Пишем ТЗ для разработки, учитывая <br> бизнес-процессы и технологии <br> заказчика и потребности <br> пользователей.</p>
+                            </div>
+
+                            <div class="etaps-block-one-two etaps-block-bottom">
+                                <img src="./images/etaps_four.svg" alt="">
+                                <p class="etaps-block-one-two-title etaps-title">Программируем</p>
+                                <p class="etaps-block-one-two-desc etaps-desc">Создаём расширяемую архитектуру, <br> пишем чистый и стабильный код. <br> Интегрируемся с технологиями <br> заказчика</p>
+                            </div>
+                        </div>
+
+                        <div class="etaps-block-two">
+                            <div class="etaps-block-two-one">
+                                <img src="./images/etaps_two.svg" alt="">
+                                <p class="etaps-block-two-one-title etaps-title">Протирируем</p>
+                                <p class="etaps-block-two-one-desc etaps-desc">Прорабатываем пользоватеские <br> сценарии, проектируем логику <br> приложения, скечируем основные <br> экраны</p>
+                            </div>
+
+                            <div class="etaps-block-two-two etaps-block-bottom">
+                                <img src="./images/etaps_five.svg" alt="">
+                                <p class="etaps-block-two-two-title etaps-title">Тестируем</p>
+                                <p class="etaps-block-two-two-desc etaps-desc">Проводим ручное функциональное <br> тестирование и пишем - автотесты. <br> Готовим чек-листы и тест-кейсы.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="etaps-block-three">
+                            <div class="etaps-block-three-one">
+                                <img src="./images/etaps_three.svg" alt="">
+                                <p class="etaps-block-three-one-title etaps-title">Дизайним</p>
+                                <p class="etaps-block-three-one-desc etaps-desc">Адаптируем фирменный стиль <br> заказчика и гайдлайнам платформ. <br> Рисуем удобные и понятные <br> интерфейсы</p>
+                            </div>
+
+                            <div class="etaps-block-three-two etaps-block-bottom">
+                                <img src="./images/etaps_six.svg" alt="">
+                                <p class="etaps-block-three-two-title etaps-title">Протирируем</p>
+                                <p class="etaps-block-three-two-desc etaps-desc">Прорабатываем пользоватеские <br> сценарии, проектируем логику <br> приложения, скечируем основные <br> экраны</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <img src="./images/volna.svg" class="volna-services" alt="">
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner" id="contacts">
+                    <div class="contacts-map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac413983b0d91a3e65dbbf3c94be8fd30cec4cfab342f0e3d0b9663169c9b37a1&amp;width=723&amp;height=425&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+
+                    <div class="contacts-info">
+                        <p class="contacts-title">MOON.</p>
+
+                        <p class="contacts-address-title">Адрес:</p>
+                        <p class="contacts-address">ул. Карла Маркса 41к.3</p>
+
+                        <p class="contacts-phone-title">Телефон:</p>
+                        <p class="contacts-phone">+7 - 900 - 123 - 45 - 67</p>
+
+                        <div class="contacts-link">
+                            <a href=""><img src="./images/vk.svg" class="contacts-link-link" alt=""></a>
+                            <a href=""><img src="./images/inst.svg" class="contacts-link-link" alt=""></a>
+                            <a href=""><img src="./images/fc.svg" class="contacts-link-link" alt=""></a>
+                            <a href=""><img src="./images/bh.svg" class="contacts-link-link" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <img src="./images/volna_footer.svg" alt="">
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer-left">
+                        <a href="" class="footer-left-title">MOON.</a>
+                    </div>
+
+                    <nav class="footer-top">
+                        <a href="#services" class="footer-top-link">Услуги</a>
+                        <a href="#etaps" class="footer-top-link">Разработка</a>
+                        <a href="#contacts" class="footer-top-link">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+    <script src="vendor/js/script.js"></script>
+
+</body>
+</html>
